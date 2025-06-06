@@ -65,6 +65,31 @@
         .h2-1{
             font-weight: bold;
         }
+        .flow-chart {
+    　　　　font-family: 'Arial', sans-serif;
+    　　　　max-width: 600px;
+   　　　　 margin: auto;
+    　　　　text-align: center;
+        }
+  　　　.flow-chart h2 {
+           margin-bottom: 20px;
+           font-size: 24px;
+           color: #333;
+        }
+
+        .step {
+          background-color: #f0f8ff;
+          border: 2px solid #00bcd4;
+          border-radius: 12px;
+          padding: 15px;
+          margin: 10px 0;
+          font-size: 16px;
+        }
+        
+        .arrow {
+          font-size: 24px;
+          color: #00bcd4;
+        }
     </style>
 </head>
 <body>
@@ -92,16 +117,22 @@
               ・LIFEcsvファイル管理アプリの使い方、アップロードの仕方、仕様についてのマニュアルです。<br><br>
               ←左のメニューから選択してください。</p>
           </section>
-          <section id="flow">
-              <h2>流れ</h2><br>
-              <span class="h2-1"><p>1.LIFEに必要なデータを各アプリに入れる。<br><br>⇩<br><br>
-              2.毎月初（1日）にファイルが作成される<br><br>⇩<br><br>
-              3.各項目のファイルの詳細を確認する（グループフィールドを開く）<br><br>⇩<br><br>
-              4.未出力リストにデータが入っていればデータの行の終わりのURLを開きデータを確認する。<br><br>⇩<br><br>
-              5.データを修正する。<br><br>⇩<br><br>
-              6.すべての確認ができたらファイルの右にある「CSV再出力」ボタンを押して再度CSVを作成する。<br><br>⇩<br><br>
-              7.未出力リストに名前がなくすべてのデータがあることが確認が取れたらファイルをダウンロードし、LIFEにアップロードする。</p></span>
-          </section>
+          <section id="flow" class="flow-chart">
+  　　　　　　<h2>流れ</h2>
+  　　　　　　<div class="step">1. LIFEに必要なデータを各アプリに入れる</div>
+  　　　　　　<div class="arrow">↓</div>
+  　　　　　　<div class="step">2. 毎月初（1日）にファイルが作成される</div>
+  　　　　　　<div class="arrow">↓</div>
+  　　　　　　<div class="step">3. 各項目のファイルの詳細を確認（グループフィールドを開く）</div>
+  　　　　　　<div class="arrow">↓</div>
+  　　　　　　<div class="step">4. 未出力リストにデータがあれば、URLを開き内容を確認</div>
+  　　　　　　<div class="arrow">↓</div>
+  　　　　　　<div class="step">5. データを修正する</div>
+  　　　　　　<div class="arrow">↓</div>
+  　　　　　　<div class="step">6. 確認後、「CSV再出力」ボタンを押す</div>
+  　　　　　　<div class="arrow">↓</div>
+  　　　　　　<div class="step">7. 未出力リストが空ならファイルをダウンロードし、LIFEにアップロード</div>
+　　　　　　</section>
           <section id="koumoku">
               <h2>LIFEアップロードの際に必須である項目リスト</h2><br>
               <p><span class="h2-1">各様式に対してのLIFEアップロードの際に必須である項目リスト</span><br><br>
